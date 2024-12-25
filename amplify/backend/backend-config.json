@@ -1,0 +1,60 @@
+{
+  "parameters": {
+    "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_arn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "Todowil2orircjgk3pynkymxycmn2uproject"
+        }
+      ]
+    },
+    "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_partitionKeyName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "Todowil2orircjgk3pynkymxycmn2uproject"
+        }
+      ]
+    },
+    "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_partitionKeyType": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "Todowil2orircjgk3pynkymxycmn2uproject"
+        }
+      ]
+    },
+    "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "Todowil2orircjgk3pynkymxycmn2uproject"
+        }
+      ]
+    },
+    "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_streamArn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "Todowil2orircjgk3pynkymxycmn2uproject"
+        }
+      ]
+    },
+    "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_tableName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "Todowil2orircjgk3pynkymxycmn2uproject"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "Todowil2orircjgk3pynkymxycmn2uproject": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB",
+      "serviceType": "imported"
+    }
+  }
+}

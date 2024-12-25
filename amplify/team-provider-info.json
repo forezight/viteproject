@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-viteproject-dev-263d7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::576894907251:role/amplify-viteproject-dev-263d7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::576894907251:role/amplify-viteproject-dev-263d7-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-viteproject-dev-263d7-deployment",
+      "UnauthRoleName": "amplify-viteproject-dev-263d7-unauthRole",
+      "StackName": "amplify-viteproject-dev-263d7",
+      "StackId": "arn:aws:cloudformation:us-east-1:576894907251:stack/amplify-viteproject-dev-263d7/bdb79970-9c8e-11ef-8ca9-0e3686513edb",
+      "AmplifyAppId": "d12rgjiiql752f",
+      "PermissionsBoundaryPolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+    },
+    "categories": {
+      "storage": {
+        "Todowil2orircjgk3pynkymxycmn2uproject": {
+          "tableName": "Todo-wil2orircjgk3pynkymxycmn2u-project",
+          "region": "us-east-1",
+          "arn": "arn:aws:dynamodb:us-east-1:576894907251:table/Todo-wil2orircjgk3pynkymxycmn2u-project",
+          "streamArn": "arn:aws:dynamodb:us-east-1:576894907251:table/Todo-wil2orircjgk3pynkymxycmn2u-project/stream/2023-02-09T16:14:33.860",
+          "partitionKeyName": "id",
+          "partitionKeyType": "S"
+        }
+      }
+    }
+  }
+}
