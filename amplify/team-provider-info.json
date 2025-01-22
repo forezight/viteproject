@@ -22,6 +22,12 @@
           "partitionKeyName": "id",
           "partitionKeyType": "S"
         }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d12rgjiiql752f",
+          "type": "manual"
+        }
       }
     }
   }
