@@ -1,3 +1,6 @@
+.env
+dynamoClient.tsx
+
 # Logs
 logs
 *.log

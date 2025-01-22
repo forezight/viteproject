@@ -1,28 +1,6 @@
 {
-  "hosting": {
-    "amplifyhosting": {
-      "providerPlugin": "awscloudformation",
-      "service": "amplifyhosting",
-      "type": "manual"
-    }
-  },
+  "hosting": {},
   "parameters": {
-    "AMPLIFY_hosting_amplifyhosting_appId": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_type": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    },
     "AMPLIFY_storage_Todowil2orircjgk3pynkymxycmn2uproject_arn": {
       "usedBy": [
         {
