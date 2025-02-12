@@ -33,8 +33,11 @@ const TableData = () => {
           tipo: item.tipo.S,
           updatedAt: item.updatedAt.S,
         }));
+        
+        // 🔥 Filter only rows where presencia === "true"
+        const filteredData = formattedData.filter(item => item.presencia === "true");
 
-        setData(formattedData);
+        setData(filteredData);
         setLoading(false);
       } catch (err) {
         setError("Failed to load data");
