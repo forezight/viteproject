@@ -13,6 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #090909;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
