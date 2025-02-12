@@ -7,6 +7,7 @@ const TableData = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [filterEnabled, setFilterEnabled] = useState(false); // Toggle state
 
   useEffect(() => {
     console.log("TableData component is rendering");
@@ -34,10 +35,7 @@ const TableData = () => {
           updatedAt: item.updatedAt.S,
         }));
         
-        // 🔥 Filter only rows where presencia === "true"
-        const filteredData = formattedData.filter(item => item.presencia === "true");
-
-        setData(filteredData);
+        setData(formattedData);
         setLoading(false);
       } catch (err) {
         setError("Failed to load data");
@@ -56,9 +54,20 @@ const TableData = () => {
     return <div>{error}</div>;
   }
 
+  // Apply filtering conditionally
+  const displayedData = filterEnabled
+    ? data.filter((item) => item.presencia === "true") // Show only "true"
+    : data; // Show all  
+
   return (
     <div>
       <h1>Table Data</h1>
+
+      {/* Toggle Button */}
+      <button onClick={() => setFilterEnabled(!filterEnabled)}>
+        {filterEnabled ? "Show All" : "Show Only Presence = True"}
+      </button>
+
       <table>
         <thead>
           <tr>
@@ -76,7 +85,7 @@ const TableData = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => (
+          {displayedData.map((item) => (
             <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.alto}</td>
